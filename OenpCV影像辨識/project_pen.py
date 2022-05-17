@@ -11,7 +11,7 @@ cap = cv2.VideoCapture(0)
 #G B O
 penColorHSV = [[44,92,138,97,255,255],
                [99,184,210,113,255,255],
-               [10,79,255,79,255,255]]
+               [79,79,255,79,255,255]]
 
 penColorBGR = [[0,255,0],
                [255,0,0],
@@ -31,7 +31,7 @@ def findPen(img):
         mask = cv2.inRange(hsv, lower, upper)
     
         # result = cv2.bitwise_and(img, img, mask=mask)
-        
+    
         penx, peny = findContour(mask)
         cv2.circle(img2, (penx, peny), 6, penColorBGR[i], cv2.FILLED)
         

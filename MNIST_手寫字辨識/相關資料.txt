@@ -1,0 +1,7 @@
+http://yann.lecun.com/exdb/mnist
+
+https://www.kaggle.com/c/digit-recognizer/overview
+-import keras
+-from keras.datasets import mnist
+
+=========================================================================
